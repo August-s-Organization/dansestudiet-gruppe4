@@ -1,30 +1,27 @@
 ---
 import Button from "./Button.astro"
 ---
-<section class="">
-    <div>
+<section class="relative">
+    <div class="overflow-hidden">
         <video autoplay muted loop class="w-full h-auto">
             <source src="Banner-danse.mp4" type="video/mp4">
         </video>
     </div>
-        <div class="-mt-96 pl-40 relative z-10">
-            <h1 class="text-gul-300 text-9xl pb-6">Velkommen til Dansestudiet</h1>
-            <p class="text-hvid-200 pb-4">
-                Dansestudie i hjertet af Århus, med over 50 ugentlige danseklasser til enhver.
-            </p>
-            <Button class="">SE SKEMA HER</Button>
-        </div>
+    <div class="absolute top-1/2 left-0 transform -translate-y-1/2 md:pl-40 md:top-0 md:py-48 md:transform-none md:relative md:-mt-96 md:pl-40 md:w-2/3 lg:w-1/2 xl:w-5/12">
+        <h1 class="text-gul-300 text-4xl md:text-9xl pb-6">Velkommen til Dansestudiet</h1>
+        <p class="text-hvid-200 pb-4">
+            Dansestudie i hjertet af Århus, med over 50 ugentlige danseklasser til enhver.
+        </p>
+        <Button class="">SE SKEMA HER</Button>
     </div>
-    
-    <div class="absolute inset-0 bg-gray-500 opacity-30 mb-2"></div>
+    <div class="absolute inset-0 bg-gray-500 opacity-40 mb-2 md:hidden"></div> <!-- Absolute div for mobile only -->
 </section>
-<section class="bg-grå-400 py-48 pl-40">
-    <h2 class="text-amber-300 text-7xl w-10/12 pb-6" >Tilmeldning til forårssæsonen 2024 er nu åben!</h2>
-<div class="pl-16 w-5/12">
-    <p class="text-hvid-200 pb-3">Experimental Contemporary, Afro, House, Street Jazz, Commercial Femme, Hip Hop, Ballet, Moderne Dans, Smidighedstræning, House, Breakdance,
-    Fusion Contemporary, Yoga, Waacking, Workshops m.m.</p>
-    <p class="text-hvid-200 pb-4">Vi har mere end 50 danseklasser on ugen for alle aldre og niveauer.</p>
-    <Button class="">ALLE KLASSER</Button>
-</div>
 
+<section class="bg-grå-400 py-12 md:py-48 pl-4 md:pl-40">
+    <h2 class="text-amber-300 text-4xl md:text-7xl w-10/12 pb-6">Tilmeldning til forårssæsonen 2024 er nu åben!</h2>
+    <div class="pl-4 md:pl-16 w-full md:w-5/12 lg:w-1/2 xl:w-1/3">
+        <p class="text-hvid-200 pb-3">Experimental Contemporary, Afro, House, Street Jazz, Commercial Femme, Hip Hop, Ballet, Moderne Dans, Smidighedstræning, House, Breakdance, Fusion Contemporary, Yoga, Waacking, Workshops m.m.</p>
+        <p class="text-hvid-200 pb-4">Vi har mere end 50 danseklasser on ugen for alle aldre og niveauer.</p>
+        <Button class="">ALLE KLASSER</Button>
+    </div>
 </section>
