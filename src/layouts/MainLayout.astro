@@ -3,9 +3,10 @@ import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Footer from "../components/Footer.astro";
 import Begivenheder from "../components/Begivenheder.astro";
+import Portrtter from "../components/Portrætter.astro";
+import Undervisere from "../components/Undervisere.astro";
 import '../styles/tailwind.css';
 import 'animate.css';
-import Portrtter from "../components/Portrætter.astro";
 const { title } = Astro.props;
 ---
 <html lang="en">
@@ -28,6 +29,7 @@ const { title } = Astro.props;
 			<slot />
 			<Begivenheder></Begivenheder>
 			<Portrtter></Portrtter>
+			<Undervisere></Undervisere>
 		</main>
 
 		<footer class="max-w-5xl mx-auto px-4">
