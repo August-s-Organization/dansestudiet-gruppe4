@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'title': ['DansestudietSimple', 'DansestudietSimple-Bold', 'sans-serif'],
+        'title': ['Dansestudiet Simple', 'sans-serif'],
         'p': ['Lato', 'sans-serif'],
         'a': ['Promt', 'sans-serif'],
     },
