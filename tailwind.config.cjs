@@ -4,6 +4,10 @@ module.exports = {
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
   theme: {
     extend: {
+      fontFamily: {
+        'grotesk': ['Lato', 'sans-serif'],
+        'unica': ['Promt', 'sans-serif'],
+    },
       colors: {
         grå: {
           50: "#DBDADA",
