@@ -1,0 +1,15 @@
+---
+---
+<section x-data="{ alleundervisere: []}" x-init="alleundervisere = await (await fetch('underviserinfo.json')).json(); alleundervisere.reverse();" class="mb-16">
+<template x-for="underviserinfo in alleundervisere" :key="underviserinfo.id">
+<a href="#" class="flex justify-center gap-4">
+<article class="bg-grå-600 hover:bg-grå-800 rounded-lg overflow-hidden shadow-lg text-center mb-10">
+<img :src="underviserinfo.underviserbillede" :alt="underviserinfo.underviserbilledealt" class="object-cover h-72 w-full mt-4 mb-2">
+<section class="underviserinfo mb-4 mt-2">
+    <h3 class="text-gul-300 text-xl font-semibold mb-2" x-text="underviserinfo.undervisernavn"></h3>
+    <p class="text-hvid-200" x-text="underviserinfo.underviserhold"></p>
+</section>
+</article>
+</a>
+</template>
+</section>
