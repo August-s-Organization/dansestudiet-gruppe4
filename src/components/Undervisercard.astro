@@ -1,15 +1,15 @@
 ---
 ---
-<section x-data="{ alleundervisere: []}" x-init="alleundervisere = await (await fetch('underviserinfo.json')).json(); alleundervisere.reverse();" class="mb-16">
-<template x-for="underviserinfo in alleundervisere" :key="underviserinfo.id">
-<a href="#" class="flex justify-center gap-4">
-<article class="bg-grå-600 hover:bg-grå-800 rounded-lg overflow-hidden shadow-lg text-center mb-10">
-<img :src="underviserinfo.underviserbillede" :alt="underviserinfo.underviserbilledealt" class="object-cover h-72 w-full mt-4 mb-2">
-<section class="underviserinfo mb-4 mt-2">
-    <h3 class="text-gul-300 text-xl font-semibold mb-2" x-text="underviserinfo.undervisernavn"></h3>
-    <p class="text-hvid-200" x-text="underviserinfo.underviserhold"></p>
-</section>
-</article>
-</a>
-</template>
+<section x-data="{ alleundervisere: []}" x-init="alleundervisere = await (await fetch('underviserinfo.json')).json(); alleundervisere.reverse();" class="mb-10 mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+  <template x-for="(underviserinfo, index) in alleundervisere.slice(0, 3)" :key="index">
+    <a href="#" class="flex justify-center gap-4 mb-10">
+      <article class="bg-grå-600 hover:bg-grå-800 rounded-xl overflow-hidden shadow-lg text-center mb-10 mt-8 px-8 min-w-200">
+        <img :src="underviserinfo.underviserbillede" :alt="underviserinfo.underviserbilledealt" class="object-cover h-72 w-full mt-4 mb-2 pt-6 pb-2">
+        <section class="underviserinfo mb-20 mt-2">
+          <h3 class="text-gul-300 text-xl font-semibold mb-2" x-text="underviserinfo.undervisernavn"></h3>
+          <p class="text-hvid-200" x-text="underviserinfo.underviserhold"></p>
+        </section>
+      </article>
+    </a>
+  </template>
 </section>
