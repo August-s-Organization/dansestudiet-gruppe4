@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'grotesk': ['Lato', 'sans-serif'],
-        'unica': ['Promt', 'sans-serif'],
+        'title': ['DansestudietSimple', 'DansestudietSimple-Bold', 'sans-serif'],
+        'p': ['Lato', 'sans-serif'],
+        'a': ['Promt', 'sans-serif'],
     },
       colors: {
         grå: {
