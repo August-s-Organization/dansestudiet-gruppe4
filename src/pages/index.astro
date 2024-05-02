@@ -1,12 +1,8 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
-import Image from "astro/components/Image.astro";
 import Undervisercard from "../components/Undervisercard.astro";
 import Undervisere from "../components/Undervisere.astro";
-const nyheder = await Astro.glob('./nyheder/*.md');
-const sorteredenyheder = nyheder.sort((a, b) => Date.parse(b.frontmatter.dato) - Date.parse(a.frontmatter.dato));
-const udvalgtenyheder = sorteredenyheder.slice(0, 3);
 ---
 <MainLayout title="Titel">
 <Undervisere></Undervisere>
