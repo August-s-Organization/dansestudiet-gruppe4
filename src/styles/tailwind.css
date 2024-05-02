@@ -2,59 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    @font-face {
-        font-family: "lato", sans-serif;
-        font-weight: 200, 300, 400, 500, 600, 700;
-        font-style: normal, italic;
-        font-display: swap;
-        src: url("https://use.typekit.net/vke3ezb.css");
-    }
+@layer base {
+  @font-face {
+    font-family: "lato", sans-serif;
+    font-weight: 200, 300, 400, 500, 600, 700;
+    font-style: normal, italic;
+    font-display: swap;
+    src: url("https://use.typekit.net/vke3ezb.css");
+  }
 
-    @font-face {
-        font-family: "Prompt", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        font-display: swap;
-        src: url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    }
+  @font-face {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  }
 
-    h1 {
-        font-family: 'Dansestudiet Simple';
-        font-weight: 700;
-        font-size: 96px;
-    }
+  h1 {
+    font-family: "Dansestudiet Simple";
+    font-weight: 700;
+    font-size: 96px;
+  }
 
-    h2 {
-        font-family: 'Dansestudiet Simple';
-        font-weight: 700;
-        font-size: 72px;
-    }
+  h2 {
+    font-family: "Dansestudiet Simple";
+    font-weight: 700;
+    font-size: 72px;
+  }
 
-    h3 {
-        font-family: 'Dansestudiet Simple';
-        font-weight: 700;
-        font-size: 32px;
-    }
+  h3 {
+    font-family: "Dansestudiet Simple";
+    font-weight: 700;
+    font-size: 32px;
+  }
 
-    h4 {
-        font-family: 'Dansestudiet Simple';
-        font-weight: 700;
-        font-size: 24px;
-    }
+  h4 {
+    font-family: "Dansestudiet Simple";
+    font-weight: 700;
+    font-size: 24px;
+  }
 
-    p {
-        font-family: 'lato';
-        font-style: normal, italic;
-        font-weight: 200, 300, 400, 500, 600, 700;
-        font-size: 32px, 20px, 16px;
-    }
+  p {
+    font-family: "lato";
+    font-style: normal, italic;
+    font-weight: 200, 300, 400, 500, 600, 700;
+    font-size: 32px, 20px, 16px;
+  }
 
-    a {
-        font-family: 'Prompt';
-        font-size: 16px;
-    }
+  a {
+    font-family: "Prompt";
+    font-size: 16px;
+  }
 }
 
-@layer components{
+@layer components {
 }
